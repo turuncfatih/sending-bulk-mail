@@ -7,6 +7,7 @@ class MailService {
         this.subject = 'Test Netflix '
         this.text = ' Test Text'
         this.enTemplate = `Html Mail Template `
+        this.trTemplate = `Html Mail Template `
         this.mailGonders = 1;   // 1 tr Template tr Mail  // 2 en template en Mail
         this.mailTR = ["test@gmail.com", "test1@gmail.com", "test2@gmail.com"]
         this.enMail = ["test3@gmail.com", "test4@gmail.com", "test5@gmail.com"]
