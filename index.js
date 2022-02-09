@@ -8,7 +8,7 @@ class MailService {
         this.text = ' Test Text'
         this.enTemplate = `Html Mail Template `
         this.trTemplate = `Html Mail Template `
-        this.mailGonders = 1;   // 1 tr Template tr Mail  // 2 en template en Mail
+        this.mailSend = 1;   // 1 tr Template tr Mail  // 2 en template en Mail
         this.mailTR = ["test@gmail.com", "test1@gmail.com", "test2@gmail.com"]
         this.enMail = ["test3@gmail.com", "test4@gmail.com", "test5@gmail.com"]
     }
@@ -38,12 +38,12 @@ class MailService {
         });
 
     }
-    async mailGonder() {
-        if (this.mailGonders === 1) {
+    async sendMail() {
+        if (this.mailSend === 1) {
             this.mailTR.map(async value => {
                 await this.mailService(this.trTemplate, value);
             })
-        } else if (this.mailGonders === 2) {
+        } else if (this.mailSend === 2) {
             this.enMail.map(async value => {
                 await this.mailService(this.enTemplate, value);
             })
